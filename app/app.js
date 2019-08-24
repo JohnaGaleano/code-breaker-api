@@ -12,7 +12,7 @@ app.get("/setsecret/:secret", function(req, res) {
 
 app.get("/guess/:number", function(req, res) {
   number = req.params.number;
-  res.send({ result: CodeBreaker(number) });
+  res.send({ result: CodeBreaker.guess(number) });
 });
 
 module.exports = app;
