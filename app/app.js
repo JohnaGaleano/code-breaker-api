@@ -18,4 +18,14 @@ app.get("/guess/:number", function(req, res) {
   res.send({ result: CodeBreaker.guess(number) });
 });
 
+app.get("/upgrade/", function(req, res) {
+
+  res.send({ message: "ok!!!!" });
+});
+
+app.get("/delete/", function(req, res) {
+
+  res.send({ message: "ohhh!!!!" });
+});
+
 module.exports = app;
