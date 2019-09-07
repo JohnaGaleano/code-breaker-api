@@ -77,7 +77,7 @@ describe("CodeBreaker", function() {
   });
 
   it("should return ERROR  if the e character is  sended", function() {
-    let result = CodeBreaker.guess("1234");
+    let result = CodeBreaker.guess("1e23");
     assert.equal("ERROR", result);
   });
 });
